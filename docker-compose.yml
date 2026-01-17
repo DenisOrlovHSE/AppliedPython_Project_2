@@ -1,0 +1,13 @@
+services:
+  health_tracker_bot:
+    build: .
+    container_name: health_tracker_bot
+    environment:
+      - TG_BOT_TOKEN=${TG_BOT_TOKEN}
+      - FATSECRET_CLIENT_ID=${FATSECRET_CLIENT_ID}
+      - FATSECRET_CLIENT_SECRET=${FATSECRET_CLIENT_SECRET}
+      - DATABASE_URL=sqlite+aiosqlite:///./data/database.db
+      - FATSECRET_SAVE_PATH=/app/data/save.json
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped

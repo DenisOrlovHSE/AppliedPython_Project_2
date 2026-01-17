@@ -1,0 +1,1 @@
+OFF_API_URL = "https://world.openfoodfacts.org"
