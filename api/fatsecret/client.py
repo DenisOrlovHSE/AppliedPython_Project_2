@@ -89,7 +89,6 @@ class FatSecretClient:
                 ) as response:
                     if response.status == 200:
                         result = await response.json()
-                        print(result)
                         return TokenData.model_validate(result)
                     else:
                         print(f"Failed to get access token: {response.status}")

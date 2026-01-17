@@ -1,0 +1,8 @@
+{
+    "FatSecretClient": {
+        "access_token": "xxxxxxxxxxxxxxxxxxxxx",
+        "token_type": "Bearer",
+        "expires_in": 86400,
+        "created_at": "2026-01-16T19:35:39.423996Z"
+    }
+}
